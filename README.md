@@ -24,19 +24,18 @@ Clone the repository.
   pip install -r requirments.txt
 
 ## Codes
-> Training
-training
-Downlad IMDB-WIKI dataset (face only from https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/.
+### Training
+Downlad IMDB-WIKI dataset (face only from https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/.  
 + AgeDB
 
-Unzip them under ./data or others path.
-Pre-process each images in dataset and package it in a rec file.
-You can first train on imdb, then fine tune on wiki dataset. Train MobileNet 0.25X on a GPU such as GTX-1080Ti according to the following command
+Unzip them under ./data or others path.  
+Pre-process each images in dataset and package it in a rec file.  
+You can first train on imdb, then fine tune on wiki dataset. Train MobileNet 0.25X on a GPU such as GTX-1080Ti according to the following command  
 
 CUDA_VISIBLE_DEVICES='0' python -u train.py --data-dir $DATA_DIR --prefix './models/model' --network m1 --multiplier 0.25 --per-batch-size 128 --lr 0.01 --lr-steps '10000' --ckpt 2
 Instead, you can edit train.sh and run sh ./train.sh to train your models.
 
-> Testing
+### Testing
 Download the ESSH model from BaiduCloud or GoogleDrive and place it in ./ssh-model/.
 Here: https://drive.google.com/drive/folders/1eX_i0iZxZTMyJ4QccYd2F4x60GbZqQQJ?usp=drive_open
 You can use python test.py to test the pre-trained models or your own models.
