@@ -1,9 +1,12 @@
 # All Face Recontion Project
 ## Mask On/Off, Age, Gender, Emotion
-
+Framework: MXNet
+Mask, age, gender model is based on Retinaface Anti Cov.
+https://github.com/deepinsight/insightface
+https://github.com/yeyupiaoling/Age-Gender-MXNET
 
 ## Introduction
-
+This project is an analysis project about face such as face recognition, whether to wearing a mask, age, gender and emotion.:laughing: 
 
 
 ## References
