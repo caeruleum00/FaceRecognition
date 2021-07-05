@@ -20,9 +20,9 @@ MXNet-cu101
 Prepare the environment.
 
 Clone the repository.
-
-  pip install -r requirments.txt
-
+'''
+pip install -r requirments.txt
+'''
 ## Codes
 ### Training
 Downlad IMDB-WIKI dataset (face only from https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/.  (+ AgeDB)
@@ -30,8 +30,9 @@ Downlad IMDB-WIKI dataset (face only from https://data.vision.ee.ethz.ch/cvl/rro
 Unzip them under ./data or others path.  
 Pre-process each images in dataset and package it in a rec file.  
 You can first train on imdb, then fine tune on wiki dataset. Train MobileNet 0.25X on a GPU such as GTX-1080Ti according to the following command  
-
-  CUDA_VISIBLE_DEVICES='0' python -u train.py --data-dir $DATA_DIR --prefix './models/model' --network m1 --multiplier 0.25 --per-batch-size 128 --lr 0.01 --lr-steps '10000' --ckpt 2  
+'''
+CUDA_VISIBLE_DEVICES='0' python -u train.py --data-dir $DATA_DIR --prefix './models/model' --network m1 --multiplier 0.25 --per-batch-size 128 --lr 0.01 --lr-steps '10000' --ckpt 2  
+'''
 Instead, you can edit train.sh and run sh ./train.sh to train your models.
 
 ### Testing
