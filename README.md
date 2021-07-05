@@ -10,11 +10,11 @@ https://github.com/deepinx/age-gender-estimation
 This project is an analysis project about face such as face recognition, whether to wearing a mask, age, gender and emotion.:laughing: 
 
 ## Environment
-Python3
-Mxnet
-GTX-1080Ti
-Ubuntu 18.04
-MXNet-cu101
+Python3  
+Mxnet  
+GTX-1080Ti  
+Ubuntu 18.04  
+MXNet-cu101  
 
 ## Installation
 Prepare the environment.
@@ -25,8 +25,7 @@ Clone the repository.
 
 ## Codes
 ### Training
-Downlad IMDB-WIKI dataset (face only from https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/.  
-+ AgeDB
+Downlad IMDB-WIKI dataset (face only from https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/.  (+ AgeDB)
 
 Unzip them under ./data or others path.  
 Pre-process each images in dataset and package it in a rec file.  
