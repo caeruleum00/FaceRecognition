@@ -36,7 +36,7 @@ CUDA_VISIBLE_DEVICES='0' python -u train.py --data-dir $DATA_DIR --prefix './mod
 Instead, you can edit train.sh and run sh ./train.sh to train your models.
 
 ### Testing
-Download the ESSH model from BaiduCloud or GoogleDrive and place it in ./ssh-model/.  
+Download the ESSH model and place it in ./ssh-model/.  
 Here: https://drive.google.com/drive/folders/1eX_i0iZxZTMyJ4QccYd2F4x60GbZqQQJ?usp=drive_open  
 You can use python test.py to test the pre-trained models or your own models.  
 
